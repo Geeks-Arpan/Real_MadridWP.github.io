@@ -1,0 +1,103 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    
+   
+}
+body{
+    font-size:'Caladea', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/357/983/742/real-madrid-cristiano-ronaldo-soccer-sport-wallpaper-preview.jpg);
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    width:1100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 9;
+}
+.nav .logo{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.nav .menu{
+    width: 45%;
+}
+.nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .menu ul li{
+    list-style: none;
+}
+.nav .menu ul li a{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+.nav .menu .active{
+    color: white;
+}
+.banner-clip-path{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0,28% 0,50% 100%, 0 100%);
+    background-image: url(https://w0.peakpx.com/wallpaper/221/39/HD-wallpaper-real-madrid-futbol-thumbnail.jpg);
+    background-size:contain;
+    background-color: black;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.ronaldo{
+    position: absolute;
+    width:600px;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.ronaldo img{
+    width: 100%;
+}
+.banner-text{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: black;
+    transform:translateY(-50%)
+}
+.banner-text button{
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    border: none;
+    font-size:'Caladea', serif;
+}
